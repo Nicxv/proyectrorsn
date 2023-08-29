@@ -1,0 +1,7 @@
+{
+  "name": "proyectorsn",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

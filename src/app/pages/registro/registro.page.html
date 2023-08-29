@@ -1,0 +1,47 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button> 
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>REGISTRO</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-card>
+    <ion-card-header class="ion-text-center">
+      <ion-card-title>Registrate aqui</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-input label="Nombre" [(ngModel)]="nombreR" labelPlacement="floating" fill="solid" type="text" placeholder="Ingresar nombre"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input label="Apellido" [(ngModel)]="apellidoR" labelPlacement="floating" fill="solid" type="text" placeholder="Ingresar apellido"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input label="Email" [(ngModel)]="emailR" labelPlacement="floating" fill="solid" type="email" placeholder="ejemplo@gmail.com"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input label="Clave" [(ngModel)]="claveR" labelPlacement="floating" fill="solid" type="password" placeholder="Ingresar clave"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input label="Repetir clave" [(ngModel)]="claveR2" labelPlacement="floating" fill="solid" type="password" placeholder="Ingresar clave"></ion-input>
+        </ion-item>
+      </ion-list>   
+    </ion-card-content> 
+     <div class="ion-text-center">
+      <ion-button shape="block" color="primary">Guardar</ion-button>
+     </div>
+    
+
+  </ion-card> 
+
+ 
+</ion-content>

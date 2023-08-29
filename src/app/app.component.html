@@ -1,0 +1,17 @@
+<ion-app>
+  <ion-menu contentId="main-content" side="end">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title> Menu principal </ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <div class="botones"><ion-button class="btn" color="success" shape="full" size="small" [routerLink]="['/home']">Home</ion-button></div>
+      <div class="botones"><ion-button class="btn" color="success" shape="full" size="small" [routerLink]="['/samsung']">Samsung</ion-button></div>
+      <div class="botones"><ion-button class="btn" color="success" shape="full" size="small" [routerLink]="['/xiaomi']">Xiaomi</ion-button></div>
+      <div class="botones"><ion-button class="btn" shape="full" size="small" [routerLink]="['/login']">Iniciar sesion</ion-button></div>
+      <div class="botones"><ion-button class="btn" shape="full" size="small" [routerLink]="['/registro']">Registrarse</ion-button></div>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main-content"></ion-router-outlet>
+</ion-app>
