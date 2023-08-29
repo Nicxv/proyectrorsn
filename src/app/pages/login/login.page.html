@@ -22,14 +22,15 @@
           <ion-input label="Nombre" labelPlacement="floating" fill="solid" type="text" placeholder="Ingresar usuario"></ion-input>
         </ion-item>
         <ion-item>
-          <ion-input label="Clave" labelPlacement="floating" fill="solid" type="password" placeholder="Ingresar clave"></ion-input>
+          <ion-input label="Contraseña" labelPlacement="floating" fill="solid" type="password" placeholder="Ingresar contraseña"></ion-input>
         </ion-item>
       </ion-list>  
     </ion-card-content> 
      <div class="ion-text-center">
+        
       <ion-button shape="block" color="primary" size="small" >Login</ion-button>
       <ion-button shape="block" size="small" [routerLink]="['/registro']" color="primary">Registrarse</ion-button>
-      
+      <h5 [routerLink]="['/registro']" fill="clear" >¿Olvidaste tu contraseña?</h5>
      </div>
 
   </ion-card> 
