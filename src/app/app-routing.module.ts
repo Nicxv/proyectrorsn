@@ -62,6 +62,10 @@ const routes: Routes = [
     path: 'cambiarclave',
     loadChildren: () => import('./pages/cambiarclave/cambiarclave.module').then( m => m.CambiarclavePageModule)
   },
+  {
+    path: 'compra',
+    loadChildren: () => import('./pages/compra/compra.module').then( m => m.CompraPageModule)
+  },
 
 ];
 
