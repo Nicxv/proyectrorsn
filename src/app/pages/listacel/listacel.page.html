@@ -1,0 +1,47 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>listacel</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+
+    <ion-list *ngFor="let x of listaC">
+      <ion-item-group>
+        <ion-item-divider color="dark">
+          <ion-label class="titulos">Samsung</ion-label>
+        </ion-item-divider>
+    
+        <ion-item >
+          <ion-label>{{ x.samsung1 | uppercase }}</ion-label>
+        </ion-item>
+        <ion-item >
+          <ion-label>{{ x.samsung2 | uppercase }}</ion-label>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-label>{{ x.samsung3 | uppercase }}</ion-label>
+        </ion-item>
+      </ion-item-group>
+    
+      <ion-item-group>
+        <ion-item-divider color="dark">
+          <ion-label class="titulos">Xiaomi</ion-label>
+        </ion-item-divider>
+    
+        <ion-item>
+          <ion-label>{{ x.xiaomi1 | uppercase }}</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>{{ x.xiaomi2 | uppercase }}</ion-label>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-label>{{ x.xiaomi3 | uppercase }}</ion-label>
+        </ion-item>
+      </ion-item-group>
+    </ion-list>
+   
+
+  </ion-card>
+ 
+</ion-content>
