@@ -13,6 +13,8 @@ export class Samsung1Page implements OnInit {
 
   ngOnInit() {
       
+  }
+
 }
   
 
