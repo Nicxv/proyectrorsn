@@ -20,6 +20,7 @@
   
 
   
+<<<<<<< HEAD
 }
 .title {
   color: rgb(255, 255, 255); 
@@ -71,3 +72,25 @@ ion-header, ion-toolbar, ion-content {
   display: block;
   margin: 0 auto;
 }
+=======
+    .read-more-button {
+      margin-top: 10px;
+      width: 100%;
+      max-width: 200px; /* Ajusta el ancho máximo según tus preferencias */
+      margin: 0 auto;
+      display: block;
+      background-color: #13dc0c;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: #13dc0c;
+      }
+    }
+  }
+  
+>>>>>>> 136d3e77c341ea0052025ceffff9cc20491e28a6

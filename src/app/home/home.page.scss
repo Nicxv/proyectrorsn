@@ -45,7 +45,7 @@ $colors: (
   text-align: center;
 }
 ion-header ion-toolbar {
-  --background: #1cc00d; 
+  --background: #2dd36f; 
 }
 ion-header ion-toolbar:nth-child(2) {
   --background: #0c9b0c; 
@@ -55,4 +55,21 @@ ion-header, ion-toolbar, ion-content {
 }
 .title {
   color: rgb(255, 255, 255); 
+}
+.card {
+  text-align: center;
+  color: white;
+  opacity: 5;
+  background: blue;
+  margin: 10px;
+
+
+  --background: red;
+
+}
+
+@media (prefers-color-scheme: dark) {
+.card {
+    --background: green;
+  }
 }
