@@ -17,7 +17,7 @@
   font-size: 16px;
   line-height: 22px;
 
-  color: #8c8c8c;
+  color: #0b9b17;
 
   margin: 0;
 }
@@ -39,7 +39,7 @@
   text-align: center;
 }
 $colors: (
-  verde-personalizado: hwb(0 98% 1%) 
+  verde-personalizado: hwb(0 7% 87%) 
 );
 .product-info {
   text-align: center;
@@ -54,11 +54,11 @@ ion-header, ion-toolbar, ion-content {
   --background: #1d1c1cdd; 
 }
 .title {
-  color: rgb(255, 255, 255); 
+  color: rgb(251, 253, 251); 
 }
 .card {
   text-align: center;
-  color: white;
+  color: rgb(58, 158, 12);
   opacity: 5;
   background: blue;
   margin: 10px;
@@ -72,4 +72,19 @@ ion-header, ion-toolbar, ion-content {
 .card {
     --background: green;
   }
+}
+.success {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.success .item-inner {
+  background-color: #021a08; 
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.white-text {
+  color: rgb(0, 0, 0);
 }
