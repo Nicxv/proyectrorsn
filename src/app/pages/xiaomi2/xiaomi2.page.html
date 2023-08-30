@@ -1,4 +1,4 @@
-<ion-header>
+<ion-header [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button> 
@@ -6,58 +6,59 @@
     <ion-buttons slot="end">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title class="title">Xiaomi Mi 11 Ultra</ion-title>
+    <ion-title>xiaomi2</ion-title>
   </ion-toolbar>
 </ion-header>
 
-
-
-<ion-card class="subiri">
+<ion-content [fullscreen]="true">
+  <ion-card class="subiri">
    
-  <img alt="" src="https://media.solotodo.com/media/products/1457936_picture_1631629573.jpg" class="image" />
-  <ion-item>
-    <ion-label><h1>Xiaomi Mi 11 Ultra</h1></ion-label>
-  </ion-item>
-  <ion-item>
-    <ion-label>
-      <h2> $874.990</h2>
-      
-    </ion-label>
-  </ion-item>
-  <ion-list>
+    <img alt="" src="https://media.solotodo.com/media/products/1457936_picture_1631629573.jpg" class="image" />
     <ion-item>
-        <ion-select aria-label="Fruit" interface="popover" placeholder="Cantidad">
-          <ion-select-option value="apples">1</ion-select-option>
-          <ion-select-option value="oranges">2</ion-select-option>
-          <ion-select-option value="bananas">3</ion-select-option>
-      </ion-select>
+      <ion-label><h1>Xiaomi Mi 11 Ultra</h1></ion-label>
     </ion-item>
-  </ion-list>
-  <ion-list>
     <ion-item>
-      <ion-select aria-label="Fruit" interface="popover" placeholder="Color">
-        <ion-select-option value="red">Rojo</ion-select-option>
-        <ion-select-option value="black">Negro</ion-select-option>
-        <ion-select-option value="blue">Azul</ion-select-option>
-      </ion-select>
+      <ion-label>
+        <h2> $874.990</h2>
+        
+      </ion-label>
     </ion-item>
-  </ion-list>
-  <ion-button class="botones-achicados" expand="block" >Comprar </ion-button>
-  <ion-item>
-    <ion-label>
-      Procesador: Tipo CPU Octa-Core
-    </ion-label>
-  </ion-item>
-
-  <ion-item>
-    <ion-label>
-      Pantalla: Tamaño 173.1mm/172.5mm 
-    </ion-label>
-  </ion-item>
-
-  <ion-item>
-    <ion-label>
-      Sistema Operativo: Android
-    </ion-label>
-  </ion-item>
+    <ion-list>
+      <ion-item>
+          <ion-select aria-label="Fruit" interface="popover" placeholder="Cantidad">
+            <ion-select-option value="apples">1</ion-select-option>
+            <ion-select-option value="oranges">2</ion-select-option>
+            <ion-select-option value="bananas">3</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+    <ion-list>
+      <ion-item>
+        <ion-select aria-label="Fruit" interface="popover" placeholder="Color">
+          <ion-select-option value="red">Rojo</ion-select-option>
+          <ion-select-option value="black">Negro</ion-select-option>
+          <ion-select-option value="blue">Azul</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+    <ion-button class="botones-achicados" expand="block" >Comprar </ion-button>
+    <ion-item>
+      <ion-label>
+        Procesador: Tipo CPU Octa-Core
+      </ion-label>
+    </ion-item>
   
+    <ion-item>
+      <ion-label>
+        Pantalla: Tamaño 173.1mm/172.5mm 
+      </ion-label>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>
+        Sistema Operativo: Android
+      </ion-label>
+    </ion-item>
+  </ion-card>
+
+</ion-content>
