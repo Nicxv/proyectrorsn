@@ -6,10 +6,23 @@
     text-align: left; /* Opcional: ajusta la alineación del texto según tu diseño */
  }
 
-  .eye-icon {
-    cursor: pointer;
-    margin-top: 35px; /* Ajusta este valor según tu diseño */
-    margin-right: 0px;
-    color: #666;
-  }
+.eye-icon {
+  cursor: pointer;
+  margin-top: 35px; /* Ajusta este valor según tu diseño */
+  margin-right: 0px;
+  color: #666;
+}
+*ion-input{
+  background-color: rgba(42, 151, 48, 0.138);
+  max-width: 240px;
+  outline: auto;
+  outline-color: rgb(55, 255, 0) ;
+}
+*ion-item{
+  outline: 0 none;
+  background-color: #1e2023;
+}
+
+
+
 

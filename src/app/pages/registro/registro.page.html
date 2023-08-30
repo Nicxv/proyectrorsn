@@ -8,11 +8,11 @@
     </ion-buttons>
     <ion-title>REGISTRO</ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> 
 
 <ion-content color="success" [fullscreen]="true">
  
-  <ion-card>
+  <ion-card color="dark">
     <ion-card-header class="ion-text-center">
       <ion-card-title>Crea tu cuenta</ion-card-title>
     </ion-card-header>
@@ -43,7 +43,7 @@
         <ion-item>
           <ion-label position="floating">Clave</ion-label>
           <ion-input [(ngModel)]="clave" name="clave" type="password"  [type]="mostrarClave ? 'text' : 'password'" required></ion-input>
-          <ion-icon class="eye-icon" name="eye" slot="end" (click)="toggleMostrarClave()"></ion-icon>
+          <ion-icon position="floating" class="eye-icon" name="eye" slot="end" (click)="toggleMostrarClave()"></ion-icon>
         </ion-item>
         <div *ngIf="error" class="error-message">
           {{ claveError }}
