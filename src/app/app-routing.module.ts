@@ -54,13 +54,10 @@ const routes: Routes = [
   {
     path: 'perfil',
     loadChildren: () => import('./pages/perfil/perfil.module').then( m => m.PerfilPageModule)
-  },  {
-    path: 'listacel',
-    loadChildren: () => import('./pages/listacel/listacel.module').then( m => m.ListacelPageModule)
   },
   {
-    path: 'cambiarclave',
-    loadChildren: () => import('./pages/cambiarclave/cambiarclave.module').then( m => m.CambiarclavePageModule)
+    path: 'listacel',
+    loadChildren: () => import('./pages/listacel/listacel.module').then( m => m.ListacelPageModule)
   },
   {
     path: 'compra',

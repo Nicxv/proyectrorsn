@@ -14,7 +14,7 @@
 
 <ion-card class="subir">
    
-  <img alt="" src="https://home.ripley.cl/store/Attachment/WOP/D191/2000380949768/2000380949768_2.jpg" class="image"/>
+  <img alt="" src="https://images.squarespace-cdn.com/content/v1/589356e4e4fcb5bf186265fb/1661523516886-8YVSN09SQ70A6Y12G5EQ/Samsung-Galaxy-Fold4-Grey-Green-Front.png?format=500w"  class="image"/>
   <ion-item>
     <ion-label><h1>Samsung Galaxy Z Fold 2</h1></ion-label>
   </ion-item>
@@ -43,24 +43,23 @@
     </ion-item>
   </ion-list>
   <ion-button class="botones-achicados" expand="block" >Comprar </ion-button>
-  <ion-item>
-    <ion-label>
-      Procesador: Tipo CPU Octa-Core
-    </ion-label>
-  </ion-item>
-
-  <ion-item>
-    <ion-label>
-      Pantalla: Resolución 2208 x 1768 (QXGA+)
-    </ion-label>
-  </ion-item>
-
-  <ion-item>
-    <ion-label>
-      Sistema Operativo: Android
-    </ion-label>
-  </ion-item>
   
+  <ion-content class="ion-padding">
+    <ion-button id="modal-trigger">Present Modal</ion-button>
+    <ion-modal trigger="modal-trigger" #modal>
+      <ng-template>
+        <ion-header>
+          <ion-toolbar>
+            <ion-title>Modal</ion-title>
+            <ion-buttons slot="end">
+              <ion-button (click)="closeModal()">Close</ion-button>
+            </ion-buttons>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content class="ion-padding"> Modal Content </ion-content>
+      </ng-template>
+    </ion-modal>
+  </ion-content>
   
   
   
