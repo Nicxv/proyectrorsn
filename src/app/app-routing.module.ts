@@ -44,10 +44,6 @@ const routes: Routes = [
     loadChildren: () => import('./pages/xiaomi2/xiaomi2.module').then( m => m.Xiaomi2PageModule)
   },
   {
-    path: 'xiaomi3',
-    loadChildren: () => import('./pages/xiaomi3/xiaomi3.module').then( m => m.Xiaomi3PageModule)
-  },
-  {
     path: 'perfil',
     loadChildren: () => import('./pages/perfil/perfil.module').then( m => m.PerfilPageModule)
   },
@@ -58,10 +54,15 @@ const routes: Routes = [
   {
     path: 'compra',
     loadChildren: () => import('./pages/compra/compra.module').then( m => m.CompraPageModule)
-  },  {
+  },
+  {
     path: 'samsung1',
     loadChildren: () => import('./pages/samsung1/samsung1.module').then( m => m.Samsung1PageModule)
+  },  {
+    path: 'xiaomi3',
+    loadChildren: () => import('./pages/xiaomi3/xiaomi3.module').then( m => m.Xiaomi3PageModule)
   },
+
 
 
 ];
