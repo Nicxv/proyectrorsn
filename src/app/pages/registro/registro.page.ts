@@ -79,6 +79,11 @@ export class RegistroPage implements OnInit {
       this.error = ''; // Limpiar el mensaje de error
       // Redirigir a la página de éxito o hacer lo que sea necesario
     }  
+
+    if (!this.nombreError && !this.apellidoError && !this.emailError && !this.claveError && !this.error) {
+      // Si no hay errores en ningún campo, redirigir a otra página
+      this.navCtrl.navigateForward('/login'); // Cambia 'login' por la ruta de la página deseada
+    }
   }
 
    //validacion solo para el formato del email
