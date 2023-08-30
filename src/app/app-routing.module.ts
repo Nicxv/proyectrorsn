@@ -58,6 +58,10 @@ const routes: Routes = [
     path: 'listacel',
     loadChildren: () => import('./pages/listacel/listacel.module').then( m => m.ListacelPageModule)
   },
+  {
+    path: 'cambiarclave',
+    loadChildren: () => import('./pages/cambiarclave/cambiarclave.module').then( m => m.CambiarclavePageModule)
+  },
 
 ];
 
