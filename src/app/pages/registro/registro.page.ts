@@ -75,7 +75,7 @@ export class RegistroPage implements OnInit {
     } else if (this.clave !== this.repetirClave) {
       this.error = 'Las claves no coinciden.';
     } else {
-      // Realizar el proceso de registro aquí
+      // Realizar el proceso de registro aquí 
       this.error = ''; // Limpiar el mensaje de error
       // Redirigir a la página de éxito o hacer lo que sea necesario
     }  
