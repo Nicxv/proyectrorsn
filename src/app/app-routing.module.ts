@@ -63,7 +63,11 @@ const routes: Routes = [
   {
     path: 'xiaomi1',
     loadChildren: () => import('./pages/xiaomi1/xiaomi1.module').then( m => m.Xiaomi1PageModule)
+  },  {
+    path: 'nosotros',
+    loadChildren: () => import('./pages/nosotros/nosotros.module').then( m => m.NosotrosPageModule)
   },
+
 ];
 
 @NgModule({
