@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./xiaomi1.page.scss'],
 })
 export class Xiaomi1Page implements OnInit {
+  showFullContent: boolean = false;
+
+  toggleContent() {
+    this.showFullContent = !this.showFullContent;
+  }
 
   constructor() { }
 
@@ -13,3 +18,6 @@ export class Xiaomi1Page implements OnInit {
   }
 
 }
+
+
+  

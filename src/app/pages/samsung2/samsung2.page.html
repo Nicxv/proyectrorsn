@@ -42,23 +42,29 @@
         </ion-item>
       </ion-list>
       <ion-button class="botones-achicados" expand="block" >Comprar </ion-button>
-      <ion-item>
-        <ion-label>
-          Procesador: Tipo CPU Octa-Core
-        </ion-label>
-      </ion-item>
 
-      <ion-item>
-        <ion-label>
-          Pantalla: Tamaño 173.1mm
-        </ion-label>
-      </ion-item>
-
-      <ion-item>
-        <ion-label>
-          Sistema Operativo: Android
-        </ion-label>
-      </ion-item>
+      <div class="content">
+        <div *ngIf="showFullContent">
+          <ion-item>
+            <ion-label>
+              Pantalla: Tamaño 173.1mm
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>
+              Procesador: Tipo CPU Octa-Core
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>
+              128 GB de memoria
+            </ion-label>
+          </ion-item>
+        </div>
+        <button ion-button class="read-more-button" (click)="toggleContent()">
+          {{ showFullContent ? 'Leer menos' : 'Leer más' }}
+        </button>
+      </div>
   </ion-card>
 </ion-content>  
 
