@@ -6,7 +6,7 @@
     <ion-buttons slot="end">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>login</ion-title>
+    <ion-title>Iniciar Sesion</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -28,9 +28,9 @@
     </ion-card-content> 
      <div class="ion-text-center">
         
-      <ion-button shape="block" color="primary" size="small" >Login</ion-button>
+      <ion-button shape="block" color="primary" size="small" [routerLink]="['/home']">Ingresar</ion-button>
       <ion-button shape="block" size="small" [routerLink]="['/registro']" color="primary">Registrarse</ion-button>
-      <h5 [routerLink]="['/cambiarclave']" fill="clear" >¿Olvidaste tu contraseña?</h5>
+      <h5  fill="clear" >¿Olvidaste tu contraseña?</h5>
      </div>
 
   </ion-card> 
