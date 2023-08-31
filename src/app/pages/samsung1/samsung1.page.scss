@@ -18,11 +18,8 @@
   font-size: 12px;
   padding: 6px 12px;
   
-
-  
-<<<<<<< HEAD
 }
-.title {
+ion-title {
   color: rgb(255, 255, 255); 
 }
 
@@ -47,13 +44,13 @@ margin: 20px;
 text-align: center;
 }
 ion-header ion-toolbar {
---background: #1cc00d; 
+--background: #2dd36f; 
 }
 ion-header ion-toolbar:nth-child(2) {
---background: #0c7e0c;
+--background: #2dd36f;
 }
 ion-header, ion-toolbar, ion-content {
---background: #000000; 
+--background: #1d1c1cdd; 
 }
 .button-container {
   display: flex;
@@ -72,7 +69,6 @@ ion-header, ion-toolbar, ion-content {
   display: block;
   margin: 0 auto;
 }
-=======
     .read-more-button {
       margin-top: 10px;
       width: 100%;
@@ -91,6 +87,6 @@ ion-header, ion-toolbar, ion-content {
         background-color: #2dd36f;
       }
     }
-  }
+
   
->>>>>>> 136d3e77c341ea0052025ceffff9cc20491e28a6
+
