@@ -1,7 +1,7 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
     <ion-buttons slot="end">
-      <ion-menu-button ></ion-menu-button>
+      <ion-menu-button color="light" ></ion-menu-button>
     </ion-buttons>
     <ion-title class="title">Home</ion-title>
   </ion-toolbar>
@@ -9,10 +9,17 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <img src="assets\icon\logo2.png" alt="Imagen RSN PHONE">
-  <ion-button shape="block" size="small" [routerLink]="['/registro']" color="success">Registrarse</ion-button>
-  <img src="assets/icon/RSN PHONE.png" alt="Imagen RSN PHONE">
+  <div>
+    <ion-card class="card">
+      <ion-card-content>Bienvenido a RSN-PHONE</ion-card-content>
+    </ion-card>
+    
+    <ion-button color="success" class="btn" (click)="play()">Play</ion-button>
+    <ion-button color="primary" class="btn" (click)="pause()">Pause</ion-button>
+    <ion-button color="danger" class="warning" (click)="stop()">Stop</ion-button>
+    <img src="assets/icon/RSN PHONE.png" alt="Imagen RSN PHONE">
   
+  </div>
 
 </ion-content>
  
