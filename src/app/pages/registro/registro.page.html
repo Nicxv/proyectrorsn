@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar color="dark" >
+  <ion-toolbar >
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button> 
     </ion-buttons>
@@ -10,14 +10,14 @@
   </ion-toolbar>
 </ion-header> 
 
-<ion-content color="success" [fullscreen]="true">
+<ion-content [fullscreen]="true">
  
-  <ion-card color="dark">
+  <ion-card>
     <ion-card-header class="ion-text-center">
       <ion-card-title>Crea tu cuenta</ion-card-title>
     </ion-card-header>
 
-    <ion-card-content color="dark">
+    <ion-card-content>
       <ion-list>
         <ion-item>
           <ion-label position="floating">Nombre</ion-label>
@@ -26,7 +26,7 @@
         <div *ngIf="nombreError" class="error-message">
           {{ nombreError }}
         </div>
-        <ion-item color="dark">
+        <ion-item>
           <ion-label position="floating">Apellido</ion-label>
           <ion-input [(ngModel)]="apellido" name="apellido" required ></ion-input>
         </ion-item>
