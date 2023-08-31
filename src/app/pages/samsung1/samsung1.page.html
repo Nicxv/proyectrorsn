@@ -6,7 +6,7 @@
     <ion-buttons slot="end">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>samsung1</ion-title>
+    <ion-title>Samsung Galaxy Z Fold 2</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -40,8 +40,11 @@
         </ion-select>
       </ion-item>
     </ion-list>
+
     <ion-button expand="block" >Comprar </ion-button>
-  
+
+    <ion-button class="botones-achicados" expand="block" >Comprar </ion-button>
+    
     <div class="content">
       <h2><b>Especificaciones:</b></h2>
       <div *ngIf="showFullContent">
@@ -62,9 +65,10 @@
         </ion-item>
       </div>
       <button ion-button class="read-more-button" (click)="toggleContent()">
-        {{ showFullContent ? 'Leer menos' : 'Leer más' }}
+        {{ showFullContent ? 'Leer menos' : 'Especificaciones' }}
       </button>
     </div>
   </ion-card>
  
+
 </ion-content>
