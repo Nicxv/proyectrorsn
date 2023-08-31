@@ -19,16 +19,24 @@
     <ion-card-content>
       <ion-list>
         <ion-item>
-          <ion-input label="Nombre" labelPlacement="floating" type="text" placeholder="Ingresar usuario"></ion-input>
+          <ion-input [(ngModel)]="email" name="email" label="Email" labelPlacement="floating" type="email" placeholder="Ingresar email" required></ion-input>
         </ion-item>
+        <div *ngIf="emailErrorL" class="error-message">
+          {{ emailErrorL }}
+        </div>
         <ion-item>
-          <ion-input label="Contraseña" labelPlacement="floating" type="password" placeholder="Ingresar contraseña"></ion-input>
+          <ion-input  [(ngModel)]="clave" name="clave" label="Clave" labelPlacement="floating" type="password" placeholder="Ingresar clave" [type]="mostrarClave ? 'text' : 'password'" required></ion-input>
+          <ion-icon position="floating" class="eye-icon" name="eye" slot="end" (click)="toggleMostrarClave()"></ion-icon>
         </ion-item>
+
+        <div *ngIf="claveErrorL" class="error-message">
+          {{ claveErrorL }}
+        </div>
       </ion-list>  
     </ion-card-content> 
      <div class="ion-text-center">
         
-      <ion-button shape="block" color="primary" size="small" [routerLink]="['/home']">Ingresar</ion-button>
+      <ion-button shape="block" color="primary" size="small" (click)="logearse()">Ingresar</ion-button>
       <ion-button shape="block" size="small" [routerLink]="['/registro']" color="primary">Registrarse</ion-button>
       <h5  fill="clear" >¿Olvidaste tu contraseña?</h5>
      </div>
