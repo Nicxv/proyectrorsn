@@ -21,6 +21,22 @@ export class LoginPage implements OnInit {
 
   logearse() {
 
+    if (this.email =='admin@gmail.com' && this.clave =='aA123456789.' && !this.emailErrorL && !this.claveErrorL){
+    this.navCtrl.navigateForward('/home'); // Cambia 'login' por la ruta de la página deseada
+    }
+    if (this.email != 'admin@gmail.com'){
+      this.emailErrorL = 'El email no es válido';
+    }else {
+      this.emailErrorL = '';
+    }  
+
+    if(this.clave !='aA123456789.'){
+
+      this.claveErrorL = 'La clave es incorrecta';
+    }else {
+      this.claveErrorL = '';
+    }
+
     //validacion del email
     if (!this.email) {
       this.emailErrorL = 'El email es obligatorio.';
@@ -49,10 +65,6 @@ export class LoginPage implements OnInit {
       this.claveErrorL = '';
     }
 
-    if (!this.emailErrorL && !this.claveErrorL) {
-      // Si no hay errores en ningún campo, redirigir a otra página
-      this.navCtrl.navigateForward('/home'); // Cambia 'login' por la ruta de la página deseada
-    }
   }
 
   //validacion solo para el formato del email
