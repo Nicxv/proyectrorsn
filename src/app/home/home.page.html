@@ -11,30 +11,34 @@
 <ion-content [fullscreen]="true">
   <div>
     <ion-card class="card">
-      <ion-card-content>Bienvenido a RSN-PHONE</ion-card-content>
+      <ion-card-content>Bienvenido a RSN-PHONE!</ion-card-content>
     </ion-card>
     
     <ion-button color="success" class="btn" (click)="play()">Play</ion-button>
-    <ion-button color="primary" class="btn" (click)="pause()">Pause</ion-button>
+    <ion-button color="success" class="btn" (click)="pause()">Pause</ion-button>
     <ion-button color="danger" class="warning" (click)="stop()">Stop</ion-button>
     </div>
     
     
     <ion-card >  
+      <ion-card-header>
+        <ion-item lines="none">
+          <ion-label><h2 class="white-text">PRODUCTO DESTACADO</h2></ion-label>
+        </ion-item>
+
+      </ion-card-header>
        <img alt="" src="https://images.samsung.com/is/image/samsung/p6pim/cl/2307/gallery/cl-galaxy-z-flip5-f731-sm-f731blgjltl-537564370?$1300_1038_PNG$" class="image" />
     
    
       <ion-item lines="none" class="success">
-        <ion-label><h1 class="white-text">Samsung Galaxy Z Flip 5</h1></ion-label>
-      </ion-item>
-      <ion-item lines="none" class="success">
-        <ion-label><h1 class="white-text">Producto destacado del mes</h1></ion-label>
+        <ion-label><h2 class="white-text">Samsung Galaxy Z Flip 5</h2></ion-label>
       </ion-item>
       <ion-item lines="none" class="success">
         <ion-label>
-          <h2 class="white-text">$1.080.990</h2>
+          <h3 class="white-text">$1.080.990</h3> 
         </ion-label>
       </ion-item>
+      <ion-button class="botones-achicados" expand="block" color="success" [routerLink]="['/samsung1']">Ver producto</ion-button>
     
   </ion-card>
 

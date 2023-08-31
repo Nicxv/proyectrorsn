@@ -51,7 +51,7 @@ export class LoginPage implements OnInit {
 
     if (!this.emailErrorL && !this.claveErrorL) {
       // Si no hay errores en ningún campo, redirigir a otra página
-      this.navCtrl.navigateForward('/login'); // Cambia 'login' por la ruta de la página deseada
+      this.navCtrl.navigateForward('/home'); // Cambia 'login' por la ruta de la página deseada
     }
   }
 

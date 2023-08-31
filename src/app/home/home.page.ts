@@ -46,7 +46,7 @@ export class HomePage {
   
     }
   
-    this.router.navigate(['registro'], navigationExtras);
+    this.router.navigate(['samsung1'], navigationExtras);
 
   }
 
