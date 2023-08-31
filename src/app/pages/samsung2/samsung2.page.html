@@ -1,4 +1,4 @@
-<ion-header>
+<ion-header> [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button> 
@@ -12,7 +12,7 @@
 
 
 <ion-content [fullscreen]="true">
-  <ion-card class="subiri">
+  <ion-card class="product-box">
    
       <img alt="" src="https://media.solotodo.com/media/products/1714786_picture_1675314264.webp" class="image" />
       <ion-item>
@@ -41,7 +41,7 @@
           </ion-select>
         </ion-item>
       </ion-list>
-      <ion-button class="botones-achicados" expand="block" >Comprar </ion-button>
+      <ion-button class="botones-achicados" expand="block"color="success">Comprar </ion-button>
 
       <div class="content">
         <div *ngIf="showFullContent">
@@ -61,8 +61,11 @@
             </ion-label>
           </ion-item>
         </div>
+        <button class="read-more-button" (click)="toggleContent()">
+          {{ showFullContent ? 'Leer menos' : 'Leer más' }}
         <button ion-button class="read-more-button" (click)="toggleContent()">
           {{ showFullContent ? 'Leer menos' : 'Especificaciones' }}
+
         </button>
       </div>
   </ion-card>
