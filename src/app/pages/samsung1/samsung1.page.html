@@ -1,4 +1,4 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button> 
@@ -11,7 +11,7 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-card class="subirim">
+  <ion-card class="product-box">
      
     <img alt="" src="https://images.squarespace-cdn.com/content/v1/589356e4e4fcb5bf186265fb/1661523516886-8YVSN09SQ70A6Y12G5EQ/Samsung-Galaxy-Fold4-Grey-Green-Front.png?format=500w"  class="image" />
     <ion-item>
@@ -40,14 +40,9 @@
         </ion-select>
       </ion-item>
     </ion-list>
+
     <ion-button class="botones-achicados" expand="block" >Comprar </ion-button>
 
-    
-    
-  
-  </ion-card>  
-
-  <ion-card>
     <div class="content">
       <h2><b>Especificaciones:</b></h2>
       <div *ngIf="showFullContent">
