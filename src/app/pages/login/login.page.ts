@@ -13,6 +13,7 @@ export class LoginPage implements OnInit {
   clave: string = '';
   claveErrorL: string = '';
 
+
   mostrarClave: boolean = false;
   
 
@@ -20,17 +21,18 @@ export class LoginPage implements OnInit {
   
 
   logearse() {
+    
 
     if (this.email =='admin@gmail.com' && this.clave =='aA123456789.' && !this.emailErrorL && !this.claveErrorL){
     this.navCtrl.navigateForward('/home'); // Cambia 'login' por la ruta de la página deseada
     }
-    if (this.email != 'admin@gmail.com'){
+    if (this.email !== 'admin@gmail.com'){
       this.emailErrorL = 'El email no es válido';
     }else {
       this.emailErrorL = '';
     }  
 
-    if(this.clave !='aA123456789.'){
+    if(this.clave !=='aA123456789.'){
 
       this.claveErrorL = 'La clave es incorrecta';
     }else {
