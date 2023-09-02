@@ -63,7 +63,11 @@ const routes: Routes = [
   {
     path: 'xiaomi1',
     loadChildren: () => import('./pages/xiaomi1/xiaomi1.module').then( m => m.Xiaomi1PageModule)
+  },  {
+    path: 'cambiocontra',
+    loadChildren: () => import('./pages/cambiocontra/cambiocontra.module').then( m => m.CambiocontraPageModule)
   },
+
 
 
 ];

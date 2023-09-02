@@ -46,13 +46,13 @@ margin: 20px;
 text-align: center;
 }
 ion-header ion-toolbar {
---background: #1cc00d; 
+--background: #2dd36f; 
 }
 ion-header ion-toolbar:nth-child(2) {
---background: #0c7e0c;
+--background: #2dd36f;
 }
 ion-header, ion-toolbar, ion-content {
---background: #000000; 
+--background: #1d1c1cdd; 
 }
 .button-container {
   display: flex;
@@ -62,7 +62,7 @@ ion-header, ion-toolbar, ion-content {
 }
 
 .read-more-button {
-  background-color: #02aa02e7;
+  background-color: #2dd36f;
   color: white;
   padding: 15px 20px;
   border: none;
@@ -70,4 +70,12 @@ ion-header, ion-toolbar, ion-content {
   cursor: pointer;
   display: block;
   margin: 0 auto;
+}
+.divisiones{
+  outline: auto;
+  margin: 10px;
+}
+.letras{
+  font-size: 17px;
+  
 }
