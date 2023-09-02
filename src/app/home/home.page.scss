@@ -17,7 +17,7 @@
   font-size: 16px;
   line-height: 22px;
 
-  color: #0b9b17;
+  color: #ffffff;
 
   margin: 0;
 }
@@ -45,13 +45,10 @@ $colors: (
   text-align: center;
 }
 ion-header ion-toolbar {
-  --background: #2dd36f; 
+  --background: #322E2E ; 
 }
 ion-header ion-toolbar:nth-child(2) {
-  --background: #0c9b0c; 
-}
-ion-header, ion-toolbar, ion-content {
-  --background: #1d1c1cdd; 
+  --background: #F43435; 
 }
 .title {
   color: rgb(251, 253, 251); 
@@ -66,11 +63,11 @@ mat-form-field {
   text-align: center;
   color: rgb(255, 255, 255);
   opacity: 5;
-  background: blue;
+  background: #322E2E;
   margin: 10px;
 
 
-  --background: red;
+  --background: #F43435;
 
 }
 
@@ -94,6 +91,13 @@ mat-form-field {
 
 .white-text {
   color: rgb(0, 0, 0);
+}
+.btn{
+  color: white;
+  background-color: #F43435;
+  border-radius: 50px ;
+  margin-bottom: 30px;
+
 }
 
 
