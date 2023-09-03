@@ -45,13 +45,14 @@ $colors: (
   text-align: center;
 }
 ion-header ion-toolbar {
-  --background: #322E2E ; 
+  --background: #322E2E; 
 }
 ion-header ion-toolbar:nth-child(2) {
   --background: #F43435; 
 }
 .title {
   color: rgb(251, 253, 251); 
+
 }
 
 
@@ -99,6 +100,15 @@ mat-form-field {
   margin-bottom: 30px;
 
 }
+
+.cabecera{
+  background-color: #F43435; display: inline-block;
+  padding: 18px; 
+  border-top-right-radius: 50px; 
+  border-bottom-right-radius: 50px;
+}
+
+
 
 
 
