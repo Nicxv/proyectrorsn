@@ -4,4 +4,26 @@
 }
 .btn{
     max-width: 200px;
+    
 }
+
+ion-header ion-toolbar {
+    --background: #322E2E; 
+  }
+
+.title {
+    color: rgb(251, 253, 251); 
+  
+  }
+
+.btn{
+    color: white;
+    background-color: #F43435;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  
+  }
+
+ion-header, ion-toolbar, ion-content {
+    --background:#322E2E; 
+    }

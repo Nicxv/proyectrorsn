@@ -5,7 +5,6 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
 import { SamsungPageRoutingModule } from './samsung-routing.module';
-
 import { SamsungPage } from './samsung.page';
 
 @NgModule({
@@ -13,7 +12,8 @@ import { SamsungPage } from './samsung.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    SamsungPageRoutingModule
+    SamsungPageRoutingModule,
+    
   ],
   declarations: [SamsungPage]
 })

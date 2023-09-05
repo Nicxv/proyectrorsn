@@ -4,16 +4,16 @@
       <ion-back-button></ion-back-button> 
     </ion-buttons>
     <ion-buttons slot="end">
-      <ion-menu-button></ion-menu-button>
+      <ion-menu-button color="light" ></ion-menu-button>
     </ion-buttons>
-    <ion-title>Iniciar Sesion</ion-title>
+    <div><ion-title class="title">RSN-PHONE</ion-title></div>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" >
   <ion-card>
     <ion-card-header class="ion-text-center">
-      <ion-card-title>Iniciar sesion</ion-card-title>
+      <ion-card-title class="tamano">Iniciar Sesión</ion-card-title>
     </ion-card-header>
 
     <ion-card-content>
@@ -34,11 +34,11 @@
         </div>
       </ion-list>  
     </ion-card-content> 
-     <div class="ion-text-center">
-        
-      <ion-button shape="block" color="primary" size="small" (click)="logearse()">Ingresar</ion-button>
-      <ion-button shape="block" size="small" [routerLink]="['/registro']" color="primary">Registrarse</ion-button>
-      <h5  fill="clear" >¿Olvidaste tu contraseña?</h5>
+     <div class="ion-text-center"> 
+      
+      <ion-button fill="clear" expand="full" class="btn" (click)="logearse()">Ingresar</ion-button>
+      <ion-button fill="clear" expand="full" class="btn" [routerLink]="['/registro']" >Registrarse</ion-button>
+      <button mat-button color="disabled" shape="block"  size="small" [routerLink]="['/cambiocontra']">¿Olvidaste tu contraseña?</button>
      </div>
 
   </ion-card> 

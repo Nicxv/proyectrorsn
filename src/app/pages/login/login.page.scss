@@ -5,10 +5,37 @@
     margin-top: 2px; /* Ajusta este valor según tu diseño */
     text-align: left; /* Opcional: ajusta la alineación del texto según tu diseño */
  }
- .eye-icon {
+.eye-icon {
     cursor: pointer;
     margin-top: 35px; /* Ajusta este valor según tu diseño */
     margin-right: 0px;
     color: #666;
   }
   
+.cabecera{
+   background-color: #F43435; display: inline-block;
+   padding: 18px; 
+   border-top-right-radius: 50px; 
+   border-bottom-right-radius: 50px;
+ }
+
+.title {
+   color: rgb(251, 253, 251); 
+ 
+ }
+ 
+ ion-header ion-toolbar {
+   --background: #322E2E; 
+ }
+
+.btn{
+   color: white;
+   background-color: #F43435;
+   border-radius: 5px;
+   margin-bottom: 20px;
+ 
+ }
+
+.tamano{
+   font-size: 35px;
+}

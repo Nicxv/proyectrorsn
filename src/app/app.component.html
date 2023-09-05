@@ -1,17 +1,18 @@
 <ion-app>
   <ion-menu contentId="main-content" side="end">
     <ion-header>
+       
       <ion-toolbar>
-        <ion-title> Menu principal </ion-title>
+        <div><ion-title class="title">RSN-PHONE</ion-title></div>
       </ion-toolbar>
     </ion-header>
     <ion-content>
-      <div class="botones"><ion-button class="btn" color="success" shape="full" size="small" [routerLink]="['/home']">Inicio</ion-button></div>
-      <div class="botones"><ion-button class="btn" color="success" shape="full" size="small" [routerLink]="['/samsung']">Samsung</ion-button></div>
-      <div class="botones"><ion-button class="btn" color="success" shape="full" size="small" [routerLink]="['/xiaomi']">Xiaomi</ion-button></div>
-      <div class="botones"><ion-button class="btn" shape="full" size="small" [routerLink]="['/login']">Iniciar sesion</ion-button></div>
-      <div class="botones"><ion-button class="btn" shape="full" size="small" [routerLink]="['/registro']">Registrarse</ion-button></div>
-      <div class="botones"><ion-button class="btn" shape="full" size="small" [routerLink]="['/listacel']">Celulares Disponibles</ion-button></div>
+      <div class="botones"><ion-button fill="clear" expand="full" class="btn" [routerLink]="['/home']">Inicio</ion-button></div>
+      <div class="botones"><ion-button fill="clear" expand="full" class="btn"  [routerLink]="['/samsung']">Samsung</ion-button></div>
+      <div class="botones"><ion-button fill="clear" expand="full" class="btn"  [routerLink]="['/xiaomi']">Xiaomi</ion-button></div>
+      <div class="botones"><ion-button fill="clear" expand="full" class="btn"  [routerLink]="['/login']">Iniciar sesion</ion-button></div>
+      <div class="botones"><ion-button fill="clear" expand="full" class="btn"  [routerLink]="['/registro']">Registrarse</ion-button></div>
+      <div class="botones"><ion-button fill="clear" expand="full" class="btn"  [routerLink]="['/listacel']">Celulares Disponibles</ion-button></div>
       
     </ion-content>
   </ion-menu>
