@@ -18,13 +18,15 @@
   font-size: 12px;
   padding: 6px 12px;
   
+
+  
 }
-ion-title {
+.title {
   color: rgb(255, 255, 255); 
 }
 
 $colors: (
-verde-personalizado: hwb(120 1% 41% / 0.918) 
+verde-personalizado: hwb(120 16% 45% / 0.918) 
 );
 
 .item{
@@ -37,54 +39,45 @@ align-items: center;
 background-color: rgb(255, 255, 255);
 box-shadow: 0 0 15px 0   rgb(5, 230, 72);
 border-radius: 40px;
-padding: 30px;
+padding: 40px;
 margin: 20px;
 }
 .product-info {
 text-align: center;
 }
 ion-header ion-toolbar {
---background: #2dd36f; 
+--background: #322E2E; 
 }
 ion-header ion-toolbar:nth-child(2) {
---background: #2dd36f;
+--background: #322E2E; 
 }
 ion-header, ion-toolbar, ion-content {
---background: #1d1c1cdd; 
+--background: #ffffff; 
 }
-.button-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-}
+.btn{
+color: white;
+background-color: #F43435;
+border-radius: 10px ;
+margin-bottom: 30px;
 
-.read-more-button {
-  background-color: #02aa02e7;
-  color: white;
-  padding: 15px 20px;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  display: block;
-  margin: 0 auto;
+
 }
     .read-more-button {
       margin-top: 10px;
       width: 100%;
-      max-width: 200px; /* Ajusta el ancho máximo según tus preferencias */
+      max-width: 350px; /* Ajusta el ancho máximo según tus preferencias */
       margin: 0 auto;
       display: block;
-      background-color: #2dd36f;
+      background-color: #322E2E;
       color: white;
       border: none;
       border-radius: 5px;
-      padding: 10px 20px;
+      padding: 15px 20px;
       cursor: pointer;
       transition: background-color 0.3s ease;
   
       &:hover {
-        background-color: #2dd36f;
+        background-color: #322E2E;
       }
     }
 

@@ -1,34 +1,34 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button></ion-back-button> 
+      <ion-back-button color="light"></ion-back-button> 
     </ion-buttons>
     <ion-buttons slot="end">
-      <ion-menu-button></ion-menu-button>
+      <ion-menu-button color="light"></ion-menu-button>
     </ion-buttons>
-    <ion-title>Xiaomi 12 Pro</ion-title>
+    <ion-title class="title">RSN-PHONE</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-card class="product-box">
-   
-    <img alt="" src="https://equiposlibres.pe/wp-content/uploads/2022/04/xiaomi-12-pro-256gb-didongviet.jpg" class="image" />
-    <ion-item>
-      <ion-label><h1>Xiaomi 12 Pro</h1></ion-label>
-    </ion-item>
-    <ion-item>
+ 
+     
+  <div style="text-align: center;"><img style="max-width: 300px; width: 100%;" alt="" src="https://media.solotodo.com/media/products/1570861_picture_1650710809.jpg" class="image" /></div>
+  
+    <ion-text style="text-align: center; color: #000000; font-size: 18px; margin-left: 145px;"><b>XIAOMI 12 PRO</b></ion-text><hr>
+    <div><ion-text style="color: #757478; font-size: 15px; margin-left: 167px;"><s>$699.990</s></ion-text></div>  
       <ion-label>
-        <h2> $699.990</h2>
-        
+        <h2 style="text-align: center;" >$550.000</h2>
       </ion-label>
-    </ion-item>
+        
+      
+    
     <ion-list>
       <ion-item>
-          <ion-select aria-label="Fruit" interface="popover" placeholder="Cantidad">
-            <ion-select-option value="apples">1</ion-select-option>
-            <ion-select-option value="oranges">2</ion-select-option>
-            <ion-select-option value="bananas">3</ion-select-option>
+        <ion-select aria-label="Fruit" interface="popover" placeholder="Cantidad">
+          <ion-select-option value="apples">1</ion-select-option>
+          <ion-select-option value="oranges">2</ion-select-option>
+          <ion-select-option value="bananas">3</ion-select-option>
         </ion-select>
       </ion-item>
     </ion-list>
@@ -41,30 +41,33 @@
         </ion-select>
       </ion-item>
     </ion-list>
-    <ion-button class="botones-achicados" expand="block" >Comprar </ion-button>
 
+    <ion-button fill="clear" class="btn" expand="block" >Comprar </ion-button>
+    <ion-button fill="clear" class="btn" expand="block" >Añadir al carro </ion-button>
     <div class="content">
+      
       <div *ngIf="showFullContent">
         <ion-item>
           <ion-label>
-            Pantalla:  Tamaño 173.1mm/172.5mm 
+            Pantalla: 6,7 pulgadas FHD
           </ion-label>
         </ion-item>
         <ion-item>
           <ion-label>
-            Procesador: Tipo CPU Octa-Core
+            Procesador: Qualcomm Snapdragon 8 Gen 2 
           </ion-label>
         </ion-item>
         <ion-item>
           <ion-label>
-            Sistema Operativo: Android
+            128 GB de memoria
           </ion-label>
         </ion-item>
       </div>
       <button ion-button class="read-more-button" (click)="toggleContent()">
-        {{ showFullContent ? 'Leer menos' : 'Especificaciones' }}
+        {{ showFullContent ? 'Leer menos' : 'Ver  especificaciones' }}
       </button>
     </div>
-  </ion-card>
+  
+ 
 
 </ion-content>
