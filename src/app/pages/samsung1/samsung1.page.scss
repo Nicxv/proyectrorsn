@@ -27,10 +27,20 @@ ion-header ion-toolbar {
 --background: #322E2E; 
 }
 ion-header ion-toolbar:nth-child(2) {
+
 --background: #322E2E; 
 }
 ion-header, ion-toolbar, ion-content {
 --background: #ffffff; 
+
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+
 }
 .btn{
 color: white;
@@ -57,6 +67,87 @@ margin-bottom: 30px;
       &:hover {
         background-color: #322E2E;
       }
+    }
+
+.btn{
+  color: white;
+  background-color: #F43435;
+  border-radius: 50px ;
+  margin-bottom: 30px;
+    
+}
+.divDescuento{
+  text-align: end;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.descuento{
+  display: inline-block;
+  background-color: #F43435;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 8px;
+}
+    
+
+    ion-radio{
+      margin: 20px;
+    
+    }
+
+    ion-radio::part(container) {
+      width: 25px;
+      height: 25px;
+    
+      border-radius: 100%;
+      border: 2px solid #ddd;
+    }
+    
+    .radioButton1::part(mark) {
+      background: #F43435;
+      transition: none;
+      transform: none;
+      border-radius: 100%;
+      
+    }
+    .radioButton2::part(mark) {
+      background: #000000;
+      transition: none;
+      transform: none;
+      border-radius: 100%;
+      
+    }
+    .radioButton3::part(mark) {
+      background: blue;
+      transition: none;
+      transform: none;
+      border-radius: 100%;
+      
+    }
+    
+    ion-radio.radio-checked::part() {
+      width: 6px;
+      height: 10px;
+      
+    
+      border-width: 0px 2px 2px 0px;
+      border-style: solid;
+      border-color: #fff;
+    
+      transform: rotate(45deg);
+    }
+    .radioButton1.radio-checked::part(container){
+      background: #F43435;
+
+    }
+    .radioButton2.radio-checked::part(container){
+      background: #000000;
+
+    }
+    .radioButton3.radio-checked::part(container){
+      background: blue;
+
     }
 
   
