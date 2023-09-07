@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button> 
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-menu-button color="light" ></ion-menu-button>
+    </ion-buttons>
+    <div><ion-title class="title">RSN-PHONE</ion-title></div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card class="bajar">
+    <ion-text class="ion-text-center" >
+      <h2 >Ingresa tu email para restablecer contraseña</h2>
+    </ion-text>
+   
+    <ion-item>
+      <ion-label position="floating">Ingresar email</ion-label>
+      <ion-input [(ngModel)]="email" name="email" type="email" required></ion-input>
+    </ion-item>
+    <div *ngIf="emailError" class="error-message">
+      {{ emailError }}
+    </div>
+
+    <ion-button fill="clear" expand="full" class="btn" (click)="correo()" >Enviar</ion-button>
+  </ion-card>
+</ion-content>
