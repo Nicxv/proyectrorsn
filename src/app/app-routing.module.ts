@@ -67,10 +67,6 @@ const routes: Routes = [
     path: 'cambiarcontrasena',
     loadChildren: () => import('./pages/cambiarcontrasena/cambiarcontrasena.module').then( m => m.CambiarcontrasenaPageModule)
   },
-  {
-    path: 'admin',
-    loadChildren: () => import('./pages/admin/admin.module').then( m => m.AdminPageModule)
-  },
 
  
 
