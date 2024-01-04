@@ -13,65 +13,23 @@
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
+</ion-header> 
+
+
+
+
+
+
+
+
+
+
+<ion-content><img src="assets/icon/RNSA.png" alt="logo"> </ion-content>
   
-</ion-header>
+  
+  
 
-<ion-content [fullscreen]="true">
-  <div>
-    <ion-card class="card">
-      <ion-card-content>Bienvenido a RSN-PHONE!</ion-card-content>
-    </ion-card>
-    
-    <ion-button fill="clear" (click)="play()">Play</ion-button>
-    <ion-button fill="clear" (click)="pause()">Pause</ion-button>
-    <ion-button fill="clear" (click)="stop()">Stop</ion-button>
-    </div>
-
-    <div>
-      <swiper-container
-      #swiper
-      (afterinit)="swiperReady()"
-      (slidechange)="swiperSlideChanged($event)"
-        [loop]="true"
-        [pagination]="true">
-        <swiper-slide *ngFor="let image of images">
-          <div class="swiper-zoom-container">
-            <img [src]="image" />
-          </div>
-        </swiper-slide>
-      </swiper-container>
-    </div>
-
-    
 
 
 
     
-
-    <div style="margin-top: 10px; text-align: center;" ><h1>Productos Destacados</h1></div>
-
-    <div class="divDescuento"><ion-text class="descuento">20%</ion-text></div>
-    <div><img alt="" src="https://images.samsung.com/is/image/samsung/p6pim/cl/2307/gallery/cl-galaxy-z-flip5-f731-sm-f731blgjltl-537564370?$1300_1038_PNG$" class="image" /></div>
-    <div><ion-text style="font-size: 14px; color: #757478; margin-left: 15px;"><b>SAMSUNG</b></ion-text> </div> 
-      <ion-text style="color: #000000; font-size: 18px; margin-left: 15px;"><b>CELULAR GALAXY Z FLIP 5 512GB</b></ion-text><hr>
-      <div><ion-text style="color: #757478; font-size: 15px; margin-left: 15px;"><s>$1.080.990</s></ion-text></div>
-      <ion-text style="color: #000000; font-size: 18px; margin-left: 15px;">$864.990</ion-text>  
-    
-      <ion-button fill="clear" class="btn" expand="block" [routerLink]="['/samsung3']">Ver producto</ion-button>
-      <hr size="5px" width="100%" color="gray"/>
-
-
-      <div class="divDescuento"><ion-text class="descuento">30%</ion-text></div>
-    <div style="text-align: center;"><img alt="" style="width: 100%; max-width: 340px; " src="https://media.solotodo.com/media/products/1570861_picture_1650710809.jpg" class="image" /></div>
-    <div><ion-text style="font-size: 14px; color: #757478; margin-left: 15px;"><b>XIAOMI</b></ion-text> </div> 
-      <ion-text style="color: #000000; font-size: 18px; margin-left: 15px;"><b>CELULAR XIAOMI 12 PRO</b></ion-text><hr>
-      <div><ion-text style="color: #757478; font-size: 15px; margin-left: 15px;"><s>$699.990</s></ion-text></div>
-      <ion-text style="color: #000000; font-size: 18px; margin-left: 15px;">$489.990</ion-text>  
-      <ion-button fill="clear" class="btn" expand="block" [routerLink]="['/xiaomi1']">Ver producto</ion-button>
-      <hr size="5px" width="100%" color="gray"/>
-
-  <app-componente1 style="text-align: center;" nombre="Made in China"></app-componente1>
-
-
-</ion-content>
- 
