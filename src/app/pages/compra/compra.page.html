@@ -1,31 +1,23 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>compra</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button color="light"></ion-back-button> 
+    </ion-buttons>
+    <ion-title class="title">Compra</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">compra</ion-title>
-    </ion-toolbar>
-  </ion-header>
-</ion-content>
+  <!-- Lista de compras -->
+  <ion-list>
+    <ion-item *ngFor="let item of carrito">
+      <ion-label>{{ item.nombre }}</ion-label>
+      <ion-label slot="end">{{ item.precio | currency }}</ion-label>
+    </ion-item>
+  </ion-list>
 
-<div class="ion-text-center ion-align-items-center">
-  <div class="product-box">
-    <div class="item">
-      <ion-img 
-        class="imagen-achicada2"
-        src="https://images.squarespace-cdn.com/content/v1/589356e4e4fcb5bf186265fb/1661523516886-8YVSN09SQ70A6Y12G5EQ/Samsung-Galaxy-Fold4-Grey-Green-Front.png?format=500w" 
-        alt="Imagen desde URL">
-      </ion-img>
-    </div>
-    <div class="product-info">
-      <ion-label>
-        <h4>Samsung Galaxy Z Fold 2 </h4>
-        <p class="price">$799.990</p>
-      </ion-label>
-      
+  <!-- Total del carrito -->
+  <div *ngIf="carrito.length > 0">
+    <p>Total del Carrito: {{ totalCarrito | currency }}</p>
   </div>
-</div>
+</ion-content>
