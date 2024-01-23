@@ -77,17 +77,32 @@
   </div>
 
   <!-- Área del carrito -->
-  <div *ngIf="carrito.length > 0">
-    <h2>Carrito de Compras</h2>
-    <div *ngFor="let item of carrito">
-      <img [src]="item.imagen" alt="{{ item.nombre }}" class="imagen-achicada" />
-      <p>{{ item.nombre }}</p>
-      <p>{{ item.precio | currency }}</p>
+<div *ngIf="carrito.length > 0" class="carrito-container">
+  <ion-icon name="cart-outline" class="carrito-icono"></ion-icon>
+  <h2 class="carrito-titulo-texto">Carrito de Compras</h2>
+
+  <div class="productos-carrito">
+    <div *ngFor="let item of carrito; let i = index" class="product-box-carrito">
+      <div style="text-align: center;">
+        <img [src]="item.imagen" alt="{{ item.nombre }}" class="image-achicada" />
+      </div>
+      <div>
+        <ion-text style="font-size: 12px; color: #757478; margin-left: 5px;"><b>{{ item.nombre }}</b></ion-text>
+      </div>
+      <ion-text style="color: #000000; font-size: 14px; margin-left: 5px;">{{ item.precio | currency }}</ion-text>
+      <!-- Agrega el botón de eliminar con color rojo -->
+      <ion-button fill="clear" class="btn-eliminar" color="danger" (click)="eliminarDelCarrito(i)">Eliminar</ion-button>
     </div>
-    <p>Total del Carrito: {{ totalCarrito | currency }}</p>
-    <ion-button fill="clear" class="btn" expand="block" [routerLink]="['/compra']">
-      Ir a Compra
-    </ion-button>
+  </div>
+
+  <p>Total del Carrito: {{ totalCarrito | currency }}</p>
+  <ion-button fill="clear" class="btn" expand="block" [routerLink]="['/compra']">
+    Ir a Compra
+  </ion-button>
+</div>
+
+
+    
     
      
       
